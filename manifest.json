@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Google Trad URL to Discord",
+  "version": "1.0",
+  "description": "Scrape les traductions depuis l'URL et les envoie sur Discord.",
+  "permissions": ["tabs", "https://discord.com/"],
+  "content_scripts": [
+    {
+      "matches": ["https://translate.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
